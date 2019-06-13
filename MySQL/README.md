@@ -64,7 +64,7 @@ O MySQL tem suporte a tipos de dados que correspondem às classes OpenGIS. Algun
 
 > - **GEOMETRY** - (Pode armazenar qualquer tipo de valor geométrico. Os outros valores simples como: POINT, LINESTRING e POLYGON, têm seus valores restritos aos tipos geométricos a que se referem. )
 >
->   ##### Os outros, que seguem listados, carregam valores relativos a coleções/coletivos:
+>   #### Os outros, que seguem listados, carregam valores relativos a coleções/coletivos:
 >
 > - **POINT**
 > - **LINESTRING**
