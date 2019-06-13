@@ -27,6 +27,8 @@ INSERT INTO CLIENTE(NOME,SEXO,CPF,TELEFONE,ENDERECO,CIDADE,ESTADO) VALUES('Gabri
 INSERT INTO CLIENTE VALUES('José','F','jose@gmail.com',8845469,'2928416','RUA PIRITUBA','Socorro','SP'),
                           ('Pintos Valdo','F','pvaldo@gmail.com',44121554,'97462318','RUA SÃO JOSÉ','Socorro','SP');
 
+------------------------------------------------------------------------------------------------------------------
+
 /* Comandos SELECT */
 
 /* 01 - Mostrando o AGORA */
