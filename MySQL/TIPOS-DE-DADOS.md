@@ -75,4 +75,4 @@ O MySQL tem suporte a tipos de dados que correspondem às classes OpenGIS. Algun
 > - **MULTIPOLYGON**
 
 Assim, **GEOMETRYCOLLECTION** pode armazenar coletâneas de objetos de qualquer tipo. 
-Os outros tipos coletivos (**MULTILINESTRING, MULTIPOLYGON e GEOMETRYCOLLECTION**) restringem-se a cada forma geométrica particular.
+Os outros tipos coletivos (**MULTILINESTRING**, **MULTIPOLYGON** e **GEOMETRYCOLLECTION**) restringem-se a cada forma geométrica particular.

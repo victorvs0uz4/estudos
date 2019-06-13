@@ -52,3 +52,7 @@ SELECT NOME FROM CLIENTE WHERE SEXO = 'M';
 /* 07 - Utilizando o LIKE (Me traga o resultado que se pareça ou seja como)
 Caracter coringa: %, tudo que começa ou tudo que termina */
 SELECT NOME, SEXO FROM CLIENTE WHERE ENDERECO LIKE '%Centro%';
+
+------------------------------------------------------------------------------------------------------------------
+
+/* OPERADORES LÓGICOS */
