@@ -43,12 +43,12 @@ SELECT NOME, TELEFONE, CIDADE FROM CLIENTE;
 /* 04 - Apenas para fins educativo, o '*' filtra TUDO! */
 SELECT * FROM CLIENTE;
 
-/* Filtrando dados com WHERE, passando as colunas */
+/* 05 - Filtrando dados com WHERE (Ao utilizar o '=' o resultado é absoluto), passando as colunas */
 SELECT NOME, SEXO FROM CLIENTE WHERE SEXO = 'M';
 
-/* Trazendo apenas cadastros do sexo masculino sem passar a coluna 'SEXO') */
+/* 06 - Trazendo apenas cadastros do sexo masculino sem passar a coluna 'SEXO') */
 SELECT NOME FROM CLIENTE WHERE SEXO = 'M';
 
-/* Utilizando o LIKE (Me traga o resultado que se pareça ou seja como)*/
-/* Caracter coringa: %, tudo que começa ou tudo que termina */
-SELECT NOME, SEXO FROM CLIENTE WHERE ESTADO LIKE '%SP';
+/* 07 - Utilizando o LIKE (Me traga o resultado que se pareça ou seja como)
+Caracter coringa: %, tudo que começa ou tudo que termina */
+SELECT NOME, SEXO FROM CLIENTE WHERE ENDERECO LIKE '%Centro%';
