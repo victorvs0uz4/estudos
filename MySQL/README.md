@@ -1,6 +1,8 @@
 ## Tipos de dados do MySQL e MariaDB
 
-![<https://cdn-images-1.medium.com/max/1200/1*l9ktb4erdPUhKAGjWHH6QA.jpeg>]()
+<p align="center">
+  <img width="800" height="500" src="https://cdn-images-1.medium.com/max/1200/1*l9ktb4erdPUhKAGjWHH6QA.jpeg">
+</p>
 
 Tipos de dados são uma forma de classificar as informações que serão armazenados no banco de dados.
 Entender os tipos de dados que podem ser armazenados no banco e a que situações se adequam é importante para projetar um banco de dados o mais eficiente possível. Veja, a seguir, alguns dos tipos de dados mais comuns no MySQL, acompanhado de uma breve descrição.
