@@ -5,10 +5,10 @@ CREATE DATABASE projeto;
 USE projeto;
 
 /* Criando tabela */
-CREATE TABLE CLIENTE;
+CREATE TABLE CLIENTE (NOME VARCHAR(30), SEXO CHAR(1), EMAIL VARCHAR(30), CPF INT(11), TELEFONE VARCHAR(30), ENDERECO VARCHAR(30), CIDADE VARCHAR(30), ESTADO CHAR(2));
 
 /* Mostrando as tabelas do banco */
-SHOW TABLES;
+SHOW TABLE;
 
 /* Exbindo a estrutura de uma tabela */
 DESC CLIENTE;
