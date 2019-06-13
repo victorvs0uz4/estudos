@@ -29,14 +29,14 @@ INSERT INTO CLIENTE VALUES('José','F','jose@gmail.com',8845469,'2928416','RUA P
 
 /* Comandos SELECT */
 
-/* Mostrando o AGORA */
+/* 01 - Mostrando o AGORA */
 SELECT NOW();
 
-/* ALIAS de Coluna */
+/* 02 - ALIAS de Coluna */
 SELECT 'VICTOR' AS 'NETWORK ADMDIN';
 
-/* SELECT filtrando conteúdo especifico */
+/* 03 - SELECT filtrando conteúdo especifico */
 SELECT NOME, TELEFONE, CIDADE FROM CLIENTE;
 
-/* Apenas para fins educativo, o '*' filtra TUDO! */
+/* 04 - Apenas para fins educativo, o '*' filtra TUDO! */
 SELECT * FROM CLIENTE;
