@@ -8,7 +8,7 @@ Utiliza-se a tabela verdade em proposições compostas, ou seja, sentenças form
 
 Para combinar proposições simples e formar proposições compostas são utilizados conectivos lógicos. Estes conectivos representam operações lógicas.
 
-
+------
 
 Na condição "**OU**", basta que uma das clausulas seja verdadeira (**V**), para o resultado final ser (**V**).
 
