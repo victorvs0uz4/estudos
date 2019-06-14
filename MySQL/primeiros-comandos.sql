@@ -30,7 +30,6 @@ INSERT INTO CLIENTE VALUES('José','M','jose@gmail.com',8845469,'2928416','Rua P
 ------------------------------------------------------------------------------------------------------------------
 
 /* Comandos SELECT */
-
 /* 01 - Mostrando o AGORA */
 SELECT NOW();
 
