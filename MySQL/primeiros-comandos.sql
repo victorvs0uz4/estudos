@@ -79,3 +79,17 @@ SELECT COUNT(*) AS 'TOTAL DE REGISTROS' FROM CLIENTE;
 /* Operador GROUP BY (AGRUPE POR) */
 SELECT SEXO, COUNT(*) AS 'QUANTIDADE' FROM CLIENTE GROUP BY SEXO;
 
+------------------------------------------------------------------------------------------------------------------
+
+/* Filtrando conteúdo NULL. - NULL é um espaço reservado para indicar a ausência de valor,
+é por isso que neste caso deve-se utilizar os predicados IS NULL ou IS NOT NULL */
+
+SELECT NOME, SEXO, ENDERECO FROM CLIENTE WHERE EMAIL IS NULL;
+
+SELECT NOME, SEXO, ENDERECO FROM CLIENTE WHERE EMAIL IS NOT NULL;
+
+------------------------------------------------------------------------------------------------------------------
+
+/* Utilizando o UPDATE acompanhado da clausula WHERE para atualizar os valores */
+
+UPDATE CLIENTE SET EMAIL = 'gabriela@hotmail.com' WHERE NOME = 'Gabriela';
