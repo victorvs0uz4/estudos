@@ -8,7 +8,7 @@ USE projeto;
 CREATE TABLE CLIENTE (NOME VARCHAR(30), SEXO CHAR(1), EMAIL VARCHAR(30), CPF INT(11), TELEFONE VARCHAR(30), ENDERECO VARCHAR(30), CIDADE VARCHAR(30), ESTADO CHAR(2));
 
 /* Mostrando as tabelas do banco */
-SHOW TABLE;
+SHOW TABLES;
 
 /* Exbindo a estrutura de uma tabela */
 DESC CLIENTE;
@@ -52,6 +52,30 @@ SELECT NOME FROM CLIENTE WHERE SEXO = 'M';
 Caracter coringa: %, tudo que começa ou tudo que termina */
 SELECT NOME, SEXO FROM CLIENTE WHERE ENDERECO LIKE '%Centro%';
 
+/* Filtrando Clientes pelas cidades de Atibaia e Socorro, com IN. */
+SELECT NOME, SEXO, CIDADE, TELEFONE FROM CLIENTE WHERE CIDADE IN ("Atibaia","Socorro");
+
 ------------------------------------------------------------------------------------------------------------------
 
-/* OPERADORES LÓGICOS */
+/* OPERADORES LÓGICOS (Tabela verdade colocada em prática) */
+/* OR - OU */
+SELECT NOME, SEXO, ENDERECO FROM CLIENTE WHERE SEXO = 'M' OR ENDERECO LIKE '%Centro';
+
+SELECT NOME, SEXO, ENDERECO FROM CLIENTE WHERE SEXO = 'F' OR ENDERECO LIKE '%Ressaca';
+
+/* AND - E */
+SELECT NOME, SEXO, ENDERECO FROM CLIENTE WHERE SEXO = 'M' AND ENDERECO LIKE '%Centro';
+
+SELECT NOME, SEXO, CIDADE FROM CLIENTE WHERE SEXO = 'F' AND CIDADE LIKE '%Socorro';
+
+------------------------------------------------------------------------------------------------------------------
+
+/* Contando os registros de uma Tabela */
+SELECT COUNT(*) FROM CLIENTE;
+
+/* Utilizando o ALIAS de coluna com o COUNT */
+SELECT COUNT(*) AS 'TOTAL DE REGISTROS' FROM CLIENTE;
+
+/* Operador GROUP BY (AGRUPE POR) */
+SELECT SEXO, COUNT(*) AS 'QUANTIDADE' FROM CLIENTE GROUP BY SEXO;
+
