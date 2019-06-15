@@ -10,7 +10,7 @@ Para combinar proposições simples e formar proposições compostas são utiliz
 
 ------
 
-`Na condição "**OU**", basta que uma das clausulas seja verdadeira (**V**), para o resultado final ser (**V**).`
+Na condição "**OU**", basta que uma das clausulas seja verdadeira (**V**), para o resultado final ser (**V**).
 
 Temos o seguinte exemplo:
 
@@ -28,7 +28,7 @@ Temos o seguinte exemplo:
 
 
 
-`Na condição "**E**", os dois resultados devem ser verdadeiros (**V**), para o resultado final ser (**V**).`
+Na condição "**E**", os dois resultados devem ser verdadeiros (**V**), para o resultado final ser (**V**).
 
 |  A   |  B   | A e B |
 | :--: | :--: | :---: |
