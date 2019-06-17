@@ -6,13 +6,13 @@
 
    **[AZUL,AMARELO,VERDE,LARANJA]** - *Elementos de um mesmo tipo, uma mesma família.*
 
-   
+------
 
 2. Todo campo **MULTIVALORADO** (*Recebe vários valores*) se tornará outra tabela.
 
    Um exemplo de campo **MULTIVALORADO** divisível, seria o endereço, onde pode conter: *Nome da Rua*, *Bairro*, *Cidade*, *Estado*, *Número da Casa*.
 
-   
+------
 
 3. Toda tabela necessita de pelo menos um campo que identifique todo o registro como sendo **único.** É o que chamas de **CHAVE PRIMÁRIA** ou **PRIMARY KEY.**
 
