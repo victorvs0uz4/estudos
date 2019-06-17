@@ -93,3 +93,5 @@ SELECT NOME, SEXO, ENDERECO FROM CLIENTE WHERE EMAIL IS NOT NULL;
 /* Utilizando o UPDATE acompanhado da clausula WHERE para atualizar os valores */
 
 UPDATE CLIENTE SET EMAIL = 'gabriela@hotmail.com' WHERE NOME = 'Gabriela';
+
+------------------------------------------------------------------------------------------------------------------
