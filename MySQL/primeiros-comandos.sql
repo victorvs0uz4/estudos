@@ -95,3 +95,29 @@ SELECT NOME, SEXO, ENDERECO FROM CLIENTE WHERE EMAIL IS NOT NULL;
 UPDATE CLIENTE SET EMAIL = 'gabriela@hotmail.com' WHERE NOME = 'Gabriela';
 
 ------------------------------------------------------------------------------------------------------------------
+
+/* SELEÇÃO, PROJEÇÃO E JUNÇÃO */
+/* PROJEÇÃO - Tudo o que queremos projetar na tela */
+
+SELECT NOW() AS "DATA";
+
+SELECT NOME, NOW() AS "DATA" FROM CLIENTE; /* PROJEÇÃO */
+
+/* WHERE é a CLAUSULA de SELEÇÃO - Teoria dos conjuntos */
+/* CONJUNTO INTEIRO = Conteudo de uma tabela */
+
+SELECT NOME, SEXO FROM CLIENTE WHERE SEXO = 'F';  /* SELEÇÃO de um subconjunto, do conjunto inteiro (TABELA) */
+
+/* Atualizando um registro errado, passando a ID do Cliente (PK) */
+UPDATE CLIENTE SET SEXO = 'F' WHERE IDCLIENTE = 4; /* SELECÃO */
+
+/* JUNÇÃO */
+SELECT NOME, SEXO, BAIRRO, CIDADE /* PROJEÇÃO */
+FROM CLIENTE 
+INNER JOIN ENDERECO /* JUNÇÃO */
+ON IDCLIENTE = ID_CLIENTE
+WHERE BAIRRO = 'CENTRO'; /* SELEÇÃO */
+
+
+------------------------------------------------------------------------------------------------------------------
+
