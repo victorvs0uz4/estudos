@@ -120,13 +120,27 @@ SELECT NOME, SEXO FROM CLIENTE WHERE SEXO = 'F';  /* SELEÇÃO de um subconjunto
 /* Atualizando um registro errado, passando a ID do Cliente (PK) */
 UPDATE CLIENTE SET SEXO = 'F' WHERE IDCLIENTE = 4; /* SELECÃO */
 
-/* JUNÇÃO */
+/* JOIN - JUNÇÃO */
 SELECT NOME, SEXO, BAIRRO, CIDADE /* PROJEÇÃO */
 FROM CLIENTE 
 INNER JOIN ENDERECO /* JUNÇÃO */
-ON IDCLIENTE = ID_CLIENTE
+ON IDCLIENTE = ID_CLIENTE /* Chave primária de um, seja igual a chave estrangeira de outro */
 WHERE BAIRRO = 'CENTRO'; /* SELEÇÃO */
 
+/* Metodo com mais tabelas, utilizando ponteiros */
+SELECT CLIENTE.NOME, CLIENTE.SEXO, ENDERECO.BAIRRO, ENDERECO.CIDADE, TELEFONE.TIPO, TELEFONE.NUMERO
+FROM CLIENTE
+INNER JOIN ENDERECO
+ON CLIENTE.IDCLIENTE = ENDERECO.ID_CLIENTE
+INNER JOIN TELEFONE
+ON CLIENTE.IDCLIENTE = TELEFONE.ID_CLIENTE;
 
+/* Metodo com mais tabelas, utilizando apelidos para elas */
+SELECT CLI.NOME, CLI.SEXO, EN.BAIRRO, EN.CIDADE, TEL.TIPO, TEL.NUMERO
+FROM CLIENTE CLI
+INNER JOIN ENDERECO EN
+ON CLI.IDCLIENTE = EN.ID_CLIENTE
+INNER JOIN TELEFONE TEL
+ON CLI.IDCLIENTE = TEL.ID_CLIENTE;
 ------------------------------------------------------------------------------------------------------------------
 
