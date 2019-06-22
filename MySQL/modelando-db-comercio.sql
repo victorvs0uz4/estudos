@@ -33,3 +33,8 @@ CREATE TABLE ENDERECO(
     FOREIGN KEY(ID_CLIENTE)
     REFERENCES CLIENTE (IDCLIENTE)
 );
+
+/* FOREIGN KEY - CHAVE ESTRANGEIRA - FK */
+/* É a chave primeria de uma tabela, que vai até outra tabela fazer referencia.
+Em relacionamentos 1 x 1, a chave estrangeira fica na tabela mais fraca.
+Em relacionamentos 1 x N, a chave estrangeira ficara sempre na tabela N */
