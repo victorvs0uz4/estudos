@@ -1,0 +1,25 @@
+/* O CSS irá aplicar etilizações da seguinte maneira no HTML:
+class = Se aplicará para todos os elementos que possuirem a mesma class, no CSS deverá ser referenciado assim: .exempo
+id = Apenas para um único elemento, no CSS deverá ser referenciado assim: #exemplo */
+body {
+    background-color: blue;
+    color: azure;
+}
+h1 {
+    color: blueviolet;
+    text-align: center
+
+}
+img {
+    width: 200px;
+}
+#titulo {
+    color: crimson;
+    font-size: 50px;
+    }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
