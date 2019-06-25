@@ -1,4 +1,8 @@
-/* O CSS irá aplicar etilizações da seguinte maneira no HTML:
+/* Para aplicarmos etilizações em seções diferentes do HTML, devemos definir ID ou CLASS, por ex:
+
+id: <h1 id="titulo">Primeira aula de CSS externo</h1>
+class: <img class="center" src="http://www.google.com/google.jpg">
+
 class = Se aplicará para todos os elementos que possuirem a mesma class, no CSS deverá ser referenciado assim: .exempo
 id = Apenas para um único elemento, no CSS deverá ser referenciado assim: #exemplo */
 body {
@@ -8,7 +12,6 @@ body {
 h1 {
     color: blueviolet;
     text-align: center
-
 }
 img {
     width: 200px;
@@ -16,7 +19,7 @@ img {
 #titulo {
     color: crimson;
     font-size: 50px;
-    }
+}
 .center {
     display: block;
     margin-left: auto;
