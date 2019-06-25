@@ -1,10 +1,10 @@
-/* Para aplicarmos etilizações em seções diferentes do HTML, devemos definir ID ou CLASS, por ex:
+/* Para aplicarmos estilizações em seções diferentes do HTML, devemos definir ID ou CLASS, por ex:
 
 id: <h1 id="titulo">Primeira aula de CSS externo</h1>
 class: <img class="center" src="http://www.google.com/google.jpg">
 
 class = Se aplicará para todos os elementos que possuirem a mesma class, no CSS deverá ser referenciado assim: .exempo
-id = Apenas para um único elemento, no CSS deverá ser referenciado assim: #exemplo */
+id = Apenas para um único elemento, algo exclusivo, no CSS deverá ser referenciado assim: #exemplo */
 body {
     background-color: blue;
     color: azure;
@@ -20,7 +20,7 @@ img {
     color: crimson;
     font-size: 50px;
 }
-.center {
+.center { /* Centralização de uma imagem */
     display: block;
     margin-left: auto;
     margin-right: auto;
