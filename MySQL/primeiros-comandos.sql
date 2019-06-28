@@ -143,4 +143,3 @@ ON CLI.IDCLIENTE = EN.ID_CLIENTE
 INNER JOIN TELEFONE TEL
 ON CLI.IDCLIENTE = TEL.ID_CLIENTE;
 ------------------------------------------------------------------------------------------------------------------
-
