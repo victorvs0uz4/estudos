@@ -143,3 +143,21 @@ ON CLI.IDCLIENTE = EN.ID_CLIENTE
 INNER JOIN TELEFONE TEL
 ON CLI.IDCLIENTE = TEL.ID_CLIENTE;
 ------------------------------------------------------------------------------------------------------------------
+
+/* Filtrando colunas com resultado NULL, e fazendo utilização de ALIAS */
+
+SELECT C.NOME, IFNULL(C.EMAIL,'SEM EMAIL') AS "EMAIL", T.NUMERO AS "CELULAR"
+FROM CLIENTE C
+INNER JOIN TELEFONE T
+ON C.IDCLIENTE = T.ID_CLIENTE
+INNER JOIN ENDERECO E
+ON C.IDCLIENTE = E.ID_CLIENTE
+WHERE TIPO = 'CEL' AND ESTADO = 'RJ';
+
+/* Resultado: */
+
++-------+-----------+----------+
+| NOME  | EMAIL     | CELULAR  |
++-------+-----------+----------+
+| Valdo | SEM EMAIL | 99886542 |
++-------+-----------+----------+

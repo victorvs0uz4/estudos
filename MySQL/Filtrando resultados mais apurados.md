@@ -21,7 +21,29 @@ WHERE SEXO = 'F' AND TIPO = 'CEL' AND ESTADO = 'SP'
 
 
 
-##### SELEÇÃO, PROJEÇÃO E JUNÇÃO
+**Filtrando colunas com resultado NULL, e fazendo utilização de ALIAS**
+
+```mysql
+SELECT C.NOME, IFNULL(C.EMAIL,'SEM EMAIL') AS "EMAIL", T.NUMERO AS "CELULAR"
+FROM CLIENTE C
+INNER JOIN TELEFONE T
+ON C.IDCLIENTE = T.ID_CLIENTE
+INNER JOIN ENDERECO E
+ON C.IDCLIENTE = E.ID_CLIENTE
+WHERE TIPO = 'CEL' AND ESTADO = 'RJ';
+
+/* Resultado: */
+
++-------+-----------+----------+
+| NOME  | EMAIL     | CELULAR  |
++-------+-----------+----------+
+| Valdo | SEM EMAIL | 99886542 |
++-------+-----------+----------+
+```
+
+
+
+**SELEÇÃO, PROJEÇÃO E JUNÇÃO**
 
 * PROJEÇÃO - Tudo o que queremos projetar na tela.
 
@@ -33,7 +55,7 @@ SELECT NOME, NOW() AS "DATA" FROM CLIENTE; /* PROJEÇÃO */
 
 
 
-##### WHERE é a CLAUSULA de SELEÇÃO - Teoria dos conjuntos
+**WHERE é a CLAUSULA de SELEÇÃO - Teoria dos conjuntos**
 
 * CONJUNTO INTEIRO = Conteúdo de uma tabela.
 
@@ -45,7 +67,7 @@ SELECT NOME, SEXO FROM CLIENTE WHERE SEXO = 'F';
 
 
 
-##### JOIN - JUNÇÃO
+**JOIN - JUNÇÃO**
 
 ```mysql
 SELECT NOME, SEXO, BAIRRO, CIDADE /* PROJEÇÃO */
@@ -79,7 +101,7 @@ ON CLI.IDCLIENTE = TEL.ID_CLIENTE;
 
 
 
-##### Atualizando um registro errado, passando a ID do Cliente (PK).
+**Atualizando um registro errado, passando a ID do Cliente (PK).**
 
 ```mysql
 UPDATE CLIENTE SET SEXO = 'F' WHERE IDCLIENTE = 4; /* SELECÃO */
