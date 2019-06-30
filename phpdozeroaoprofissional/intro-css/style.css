@@ -37,6 +37,7 @@ img {
     height: 100px;
     background-color: brown;
     text-align: center;
+    padding-top: 10px;
 }
 .menu-esq {
     width: 200px;
