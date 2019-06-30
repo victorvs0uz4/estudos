@@ -9,15 +9,18 @@ id = Apenas para um único elemento, algo exclusivo, no CSS deverá ser referenc
 */
 body {
     margin: 0;
-    background-color: cadetblue;
-    color: azure;
+    background-color: rgb(233, 233, 233);
+    color: rgb(0, 0, 0);
 }
 h1 {
     color: blueviolet;
-    text-align: center
+    text-align: center;
+    font-family: Helvetica;
 }
 img {
     width: 200px;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
 }
 #titulo {
     color: crimson;
@@ -33,6 +36,7 @@ img {
     width: 100%;
     height: 100px;
     background-color: brown;
+    text-align: center;
 }
 .menu-esq {
     width: 200px;
@@ -62,4 +66,5 @@ img {
     margin-right: auto;
     font-weight: bold;
     font-style: italic;
+    font-family: Helvetica;
 }
